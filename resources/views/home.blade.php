@@ -56,8 +56,8 @@ function getDateTime($datetime)
                             <td>{{ getDateTime($train['departure_time'])[0] }}</td>
                             <td>{{ getDateTime($train['arrival_time'])[0] }}</td>
                             <td>{{ $train['number_of_carriages'] }}</td>
-                            <td>{{ $train['is_on_time'] }}</td>
-                            <td>{{ $train['is_cancelled'] }}</td>
+                            <td>{{ $train['is_on_time'] ? 'true' : 'false' }}</td>
+                            <td>{{ $train['is_cancelled'] ? 'true' : 'false' }}</td>
                         </tr>
                     @endif
                 @endforeach
